@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YourBrand — Modern UI Sections</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Heroicons / Font Awesome can be added if you prefer. Here we use inline SVGs. -->
+  <meta name="description" content="Modern & attractive UI sections generated with AI prompts. Includes Navbar, Hero, Services, Contact, Footer." />
+</head>
+<body class="antialiased bg-slate-950 text-slate-100">
+
+  <!-- ===========================
+       NAVBAR
+       =========================== -->
+  <header class="sticky top-0 z-50 bg-black/60 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand -->
+        <a href="#" class="flex items-center gap-3">
+          <span class="inline-block w-9 h-9 rounded-md bg-gradient-to-tr from-sky-400 to-indigo-500 flex items-center justify-center text-black font-bold">YB</span>
+          <span class="text-lg font-semibold tracking-tight">YourBrand</span>
+        </a>
+
+        <!-- Desktop links -->
+        <nav class="hidden md:flex md:items-center md:gap-6">
+          <a href="#home" class="px-2 py-1 rounded-md text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500">Home</a>
+          <a href="#services" class="px-2 py-1 rounded-md text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500">Services</a>
+          <a href="#about" class="px-2 py-1 rounded-md text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500">About</a>
+          <a href="#contact" class="px-2 py-1 rounded-md text-slate-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <div class="hidden md:flex md:items-center">
+          <a href="#contact" class="inline-block px-4 py-2 rounded-full bg-sky-400 text-slate-950 font-medium shadow hover:bg-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-400">Get Started</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-400">
+            <!-- hamburger -->
+            <svg id="hamburger-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+            </svg>
+            <svg id="hamburger-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-slate-800 bg-black/40">
+      <div class="px-4 pt-4 pb-6 space-y-3">
+        <a href="#home" class="block px-3 py-2 rounded-md hover:bg-slate-900">Home</a>
+        <a href="#services" class="block px-3 py-2 rounded-md hover:bg-slate-900">Services</a>
+        <a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-900">About</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-slate-900">Contact</a>
+        <a href="#contact" class="block mt-2 px-3 py-2 rounded-md bg-sky-400 text-black text-center font-medium">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===========================
+       HERO (your existing code; kept intact)
+       =========================== -->
+  <main id="home">
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"
+      aria-labelledby="hero-heading"
+    >
+      <!-- Decorative background shapes -->
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-24 -left-16 h-64 w-64 rounded-full bg-sky-500/10 blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-10 h-72 w-72 rounded-full bg-indigo-500/10 blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/3 h-40 w-40 -translate-y-1/2 rounded-full border border-slate-700/60"></div>
+      </div>
+
+      <!-- Content Container -->
+      <div class="relative mx-auto flex max-w-6xl flex-col gap-12 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:py-24 lg:px-8">
+        <!-- Left Column: Text & CTAs -->
+        <div class="w-full space-y-8 lg:w-1/2">
+          <!-- Eyebrow + Icon -->
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-700/70 bg-slate-900/70 px-3 py-1 text-xs font-medium text-sky-300 shadow-sm backdrop-blur">
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 2.5 9 6.5 5 7.5 9 8.5 10 12.5 11 8.5 15 7.5 11 6.5 10 2.5Z" class="fill-sky-400" />
+              <path d="M4 11.5 3.5 13.5 1.5 14 3.5 14.5 4 16.5 4.5 14.5 6.5 14 4.5 13.5 4 11.5Z" class="fill-indigo-400/80" />
+            </svg>
+            <span class="tracking-wide uppercase">New • Powered by AI</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 id="hero-heading" class="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            Design beautiful experiences,
+            <span class="bg-gradient-to-r from-sky-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
+              faster than ever.
+            </span>
+          </h1>
+
+          <!-- Supporting Paragraph -->
+          <p class="max-w-xl text-balance text-base leading-relaxed text-slate-300 sm:text-lg">
+            Ship modern interfaces without drowning in boilerplate. Build, preview, and launch
+            responsive layouts in minutes with an AI-assisted workflow that keeps you in control.
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#contact" role="button" class="inline-flex items-center justify-center gap-2 rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+              Get started free
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7 4.75 12.25 10 7 15.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a href="#services" role="button" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-600 bg-slate-900/40 px-6 py-3 text-sm font-semibold text-slate-100 shadow-sm transition hover:border-sky-400 hover:text-sky-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+              View live demo
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M7 5.5v9l7-4.5-7-4.5Z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Small reassurance line -->
+          <p class="flex items-center gap-2 text-xs text-slate-400">
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 3.25 5 5v4.38c0 3.13 2.13 6 5 6.87 2.87-.87 5-3.74 5-6.87V5l-5-1.75Z" class="stroke-slate-400" stroke-width="1.4" />
+              <path d="M7.5 10.25 9 11.75l3.5-3.5" class="stroke-sky-400" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            No credit card required · Cancel anytime
+          </p>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="w-full lg:w-1/2">
+          <figure class="relative">
+            <div class="pointer-events-none absolute -inset-4 rounded-3xl border border-slate-700/60 bg-slate-900/60 blur-sm"></div>
+            <img class="relative z-10 h-auto w-full rounded-3xl object-cover shadow-2xl shadow-slate-950/70" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Designer collaborating with team" loading="lazy" />
+            <figcaption class="mt-3 text-xs text-slate-400">Real-time collaboration powered by an intuitive, responsive interface.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SERVICES
+         =========================== -->
+    <section id="services" aria-labelledby="features-heading" class="bg-gradient-to-b from-slate-900 to-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 id="features-heading" class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">What we build</h2>
+          <p class="mt-4 text-lg text-slate-300">Modern UI sections, components, and templates built to look great and perform even better across devices.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card 1 -->
+          <div class="relative bg-gradient-to-br from-indigo-800/40 to-transparent rounded-2xl p-6 hover:shadow-xl transition-shadow duration-200">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 ring-1 ring-indigo-700">
+              <svg class="w-6 h-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L15 12l-5.25-5" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-white">Pixel-perfect UI</h3>
+            <p class="mt-2 text-sm text-slate-300">Components and sections built with precision and consistent spacing for a visually balanced interface.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative bg-gradient-to-br from-pink-800/40 to-transparent rounded-2xl p-6 hover:shadow-xl transition-shadow duration-200">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 ring-1 ring-pink-700">
+              <svg class="w-6 h-6 text-pink-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-white">Fast Development</h3>
+            <p class="mt-2 text-sm text-slate-300">Reusable patterns that speed up development cycles and keep markup consistent across pages.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative bg-gradient-to-br from-emerald-800/40 to-transparent rounded-2xl p-6 hover:shadow-xl transition-shadow duration-200">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 ring-1 ring-emerald-700">
+              <svg class="w-6 h-6 text-emerald-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-white">Accessible</h3>
+            <p class="mt-2 text-sm text-slate-300">Semantic markup and focus states to improve keyboard navigation and screen reader compatibility.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative bg-gradient-to-br from-yellow-700/30 to-transparent rounded-2xl p-6 hover:shadow-xl transition-shadow duration-200">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 ring-1 ring-yellow-600">
+              <svg class="w-6 h-6 text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-white">Responsive</h3>
+            <p class="mt-2 text-sm text-slate-300">Grid-based layouts that adapt gracefully to screen sizes from mobile to large desktop screens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CONTACT / LEAD FORM
+         =========================== -->
+    <section id="contact" aria-labelledby="contact-heading" class="bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <!-- Left: Contact info -->
+          <div>
+            <h2 id="contact-heading" class="text-3xl font-extrabold text-white">Get in touch</h2>
+            <p class="mt-4 text-slate-300">Have a project or want to collaborate? Send us a message and we'll get back to you.</p>
+
+            <ul class="mt-6 space-y-4 text-slate-300">
+              <li class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-sky-400 mt-1" viewBox="0 0 24 24" fill="none"><path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="text-sm">Support</p>
+                  <p class="text-xs text-slate-400">support@yourbrand.example</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-sky-400 mt-1" viewBox="0 0 24 24" fill="none"><path d="M2 8.5V19a2 2 0 002 2h16a2 2 0 002-2V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="text-sm">Address</p>
+                  <p class="text-xs text-slate-400">123, UI Lane — WebCity</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Form -->
+          <form id="lead-form" class="bg-slate-800/60 rounded-2xl p-6 ring-1 ring-slate-700" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-sm text-slate-200">Full name</label>
+                <input id="name" name="name" required type="text" placeholder="Your name" class="mt-1 block w-full rounded-lg bg-slate-900/40 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400" />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm text-slate-200">Email</label>
+                <input id="email" name="email" required type="email" placeholder="you@example.com" class="mt-1 block w-full rounded-lg bg-slate-900/40 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400" />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm text-slate-200">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" pattern="[\d+\-\s()]{7,}" class="mt-1 block w-full rounded-lg bg-slate-900/40 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400" />
+              </div>
+
+              <div>
+                <label for="role" class="block text-sm text-slate-200">Interested in</label>
+                <select id="role" name="role" class="mt-1 block w-full rounded-lg bg-slate-900/40 border border-slate-700 px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-400">
+                  <option>UI Design</option>
+                  <option>Frontend Dev</option>
+                  <option>Full Stack</option>
+                  <option>Collaboration</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-sm text-slate-200">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" class="mt-1 block w-full rounded-lg bg-slate-900/40 border border-slate-700 px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400"></textarea>
+              </div>
+            </div>
+
+            <div class="mt-6 text-right">
+              <button type="submit" class="inline-flex items-center gap-2 rounded-full bg-sky-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow hover:bg-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Send message</button>
+            </div>
+
+            <p id="form-status" class="mt-3 text-xs text-slate-400 hidden"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         FOOTER
+         =========================== -->
+    <footer class="bg-black/80 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <a href="#" class="flex items-center gap-3">
+              <span class="inline-block w-9 h-9 rounded-md bg-gradient-to-tr from-sky-400 to-indigo-500 flex items-center justify-center text-black font-bold">YB</span>
+              <span class="text-lg font-semibold">YourBrand</span>
+            </a>
+            <p class="mt-4 text-sm text-slate-400">Design-driven components and AI prompt engineering for modern front-ends.</p>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-semibold text-slate-200">Quick links</h4>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="#home" class="text-slate-400 hover:text-white">Home</a></li>
+              <li><a href="#services" class="text-slate-400 hover:text-white">Services</a></li>
+              <li><a href="#about" class="text-slate-400 hover:text-white">About</a></li>
+              <li><a href="#contact" class="text-slate-400 hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-semibold text-slate-200">Follow us</h4>
+            <div class="mt-4 flex items-center gap-3">
+              <a href="#" class="p-2 rounded-md bg-slate-800/40 hover:bg-slate-700"><span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 16 3a4.48 4.48 0 0 0-4.47 4.47c0 .35.04.7.11 1.03A12.8 12.8 0 0 1 3 4.1s-4 9 5 13a13 13 0 0 1-8 2c11 6 24 0 24-14.5v-.6A8.5 8.5 0 0 0 23 3z"/></svg>
+              </a>
+              <a href="#" class="p-2 rounded-md bg-slate-800/40 hover:bg-slate-700"><span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.1.88 1.98 1.98 1.98 1.1 0 1.98-.88 1.98-1.98C6.96 4.38 6.08 3.5 4.98 3.5zM3 8.98h3.96V21H3V8.98zM9.5 8.98h3.79v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.09V21h-3.96v-5.1c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.67V21H9.5V8.98z"/></svg>
+              </a>
+              <a href="#" class="p-2 rounded-md bg-slate-800/40 hover:bg-slate-700"><span class="sr-only">Instagram</span>
+                <svg class="h-5 w-5 text-sky-300" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4.5 4.5 0 1 0 .001 9.001A4.5 4.5 0 0 0 12 8.5zM18.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 border-t border-slate-800 pt-6 text-sm text-slate-400">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+            <p>© <span id="year"></span> YourBrand. All rights reserved.</p>
+            <p>Made with ♥ • Designed for modern web</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===========================
+       Minimal JS
+       - Toggle mobile menu
+       - Form submit handler (demo only)
+       =========================== -->
+  <script>
+    // Mobile menu toggle
+    (function () {
+      const toggle = document.getElementById('nav-toggle');
+      const mobile = document.getElementById('mobile-menu');
+      const openIcon = document.getElementById('hamburger-open');
+      const closeIcon = document.getElementById('hamburger-close');
+
+      if (toggle && mobile) {
+        toggle.addEventListener('click', function () {
+          const isHidden = mobile.classList.toggle('hidden');
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          openIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+        });
+      }
+    })();
+
+    // Simple form handling (prevent real submit for demo)
+    (function () {
+      const form = document.getElementById('lead-form');
+      const status = document.getElementById('form-status');
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          // Basic validation (HTML handles required fields). Here we simulate a success message.
+          status.classList.remove('hidden');
+          status.textContent = 'Thanks — your message has been received (demo).';
+          status.classList.add('text-sky-300');
+          form.reset();
+          setTimeout(() => {
+            status.classList.add('hidden');
+          }, 5000);
+        });
+      }
+    })();
+
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
